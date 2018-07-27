@@ -22,7 +22,7 @@ spring:
       max-wait-millis: 200 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.zjx.springcloud.entity
+  type-aliases-package: com.atguigu.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
  
@@ -35,10 +35,10 @@ eureka:
     prefer-ip-address: true
  
 info:
-  app.name: zjx-microservicecloud-springcloudconfig03-java1129
-  company.name: www.zjx.com
-  build.artifactId: ${project.artifactId}
-  build.version: ${project.version}
+  app.name: atguigu-microservicecloud-springcloudconfig03-java1129
+  company.name: www.atguigu.com
+  build.artifactId: @{project.artifactId}
+  build.version: @{project.version}
 ---
 server:
   port: 8001
@@ -61,7 +61,7 @@ spring:
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.zjx.springcloud.entity
+  type-aliases-package: com.atguigu.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
  
@@ -75,6 +75,6 @@ eureka:
  
 info:
   app.name: atguigu-microservicecloud-springcloudconfig02
-  company.name: www.zjx.com
-  build.artifactId: ${project.artifactId}
-  build.version: ${project.version}
+  company.name: www.atguigu.com
+  build.artifactId: @{project.artifactId}
+  build.version: @{project.version}
